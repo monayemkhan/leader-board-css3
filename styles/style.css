@@ -126,3 +126,38 @@ hr{
 span{
     color: #FF4A60;
 }
+
+/* ----------------------
+media query 
+------------------------*/
+
+/* mobile screen */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+    .courses{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+}
+
+/* Tablet divises */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
